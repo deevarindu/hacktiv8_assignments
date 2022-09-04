@@ -11,7 +11,7 @@ type Biodatas struct {
 }
 
 func (b *Biodatas) printBiodata() {
-	fmt.Printf("Absen\t\t: %d\nNama\t\t: %v\nAlamat\t\t: %v\nPekerjaan\t: %v\nAlasan\t\t: %v\n", b.Absen, b.Nama, b.Alasan, b.Pekerjaan, b.Alasan)
+	fmt.Printf("Absen\t\t: %d\nNama\t\t: %v\nAlamat\t\t: %v\nPekerjaan\t: %v\nAlasan\t\t: %v\n", b.Absen, b.Nama, b.Alamat, b.Pekerjaan, b.Alasan)
 }
 
 func getBiodata(biodatas []Biodatas, absen int) {
