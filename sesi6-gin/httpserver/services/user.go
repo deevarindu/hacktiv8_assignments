@@ -24,16 +24,16 @@ var users = []models.User{
 
 func CreateUser(req *params.UserCreateRequest) *views.Response {
 	// step : (4) buat model
-	// var user models.User
+	var user models.User
 
 	hash, err := bcrypt.GenerateFromPassword([]byte(req.Password), 10)
 	if err != nil {
 		return views.BadRequestError(err)
 	}
 
-	// user.ID = 1
-	// user.Password = string(hash)
-	// user.Username = req.Username
+	user.ID = 1
+	user.Password = string(hash)
+	user.Username = req.Username
 
 	// string(hash) users password
 	for _, user := range users {
